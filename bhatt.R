@@ -198,3 +198,11 @@ bhatt.plot <- function(x, breaks = "Sturges", from = NA, to = NA,
 #       lwd = 2,
 #       col = "green",
 #       add = TRUE)
+
+library(rsconnect)
+deployApp(
+  appFiles=c("app.R"),
+  appName = "bellviewr",
+  appTitle = "Bellview Indirect Reference Intervals",
+  logLevel = "normal"
+)
