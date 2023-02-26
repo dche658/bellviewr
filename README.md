@@ -75,4 +75,20 @@ Project. All going well, the project files will be downloaded from GitHub
 To run the application in RStudio Desktop, go to the Files window for the project
 and open app.R. Run App should start the application and display the web page.
 
+## Analysing data
+
+The application accepts data in CSV format. Browse for the file containing
+your data. Selecting the file will import the data and display a truncated 
+view of the dataset. The first row is assumed to contain the column headings.
+
+Select the column you wish to analyse. This will generate a histogram and 
+Bhattacharya plot using default values. It will almost undoubtedly be 
+necessary to alter the bin width and limits of the histogram visualise a 
+linear segment in the Bhattacharya plot. Enter the start and end index for the linear segment for the Bhattacharya plot. At the present time it is only possible to select one linear segment. When the limits are entered the regression analysis will be performed along with calculation of the lower 2.5th and upper 97.5th limits of the derived normal distribution.
+
+Selecting Analyse will perform analysis using the refineR algorithm. If
+confidence intervals are required use a bootstrap value greater than 1. Note, 
+the process of calculating the confidence limits is slow and can take some time.
+
+![Parameter Selection](https://chesher.id.au/portal/images/bhattacharya/parameter-selection.png)
 
