@@ -52,7 +52,7 @@ from RStudio
 Download RStudio Desktop from
 [Posit](https://posit.co/download/rstudio-desktop/) and install.
 
-It is possible to install both R and RStudio to a user directory without
+Note, it is possible to install both R and RStudio to a user directory without
 administrator privileges.
 
 ### Installing and running the application
@@ -83,8 +83,14 @@ view of the dataset. The first row is assumed to contain the column headings.
 
 Select the column you wish to analyse. This will generate a histogram and 
 Bhattacharya plot using default values. It will almost undoubtedly be 
-necessary to alter the bin width and limits of the histogram visualise a 
-linear segment in the Bhattacharya plot. Enter the start and end index for the linear segment for the Bhattacharya plot. At the present time it is only possible to select one linear segment. When the limits are entered the regression analysis will be performed along with calculation of the lower 2.5th and upper 97.5th limits of the derived normal distribution.
+necessary to alter the bin width and limits of the histogram in order to 
+define the linear segment in the Bhattacharya plot.
+
+Enter the start and end index for the linear segment for the Bhattacharya plot. 
+At the present time it is only possible to select one linear segment. When the
+limits are entered the regression analysis will be performed along with 
+calculation of the lower 2.5th and upper 97.5th limits of the derived normal
+distribution.
 
 Selecting Analyse will perform analysis using the refineR algorithm. If
 confidence intervals are required use a bootstrap value greater than 1. Note, 
